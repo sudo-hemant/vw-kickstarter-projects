@@ -1,0 +1,125 @@
+.project {
+  display: flex;
+}
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  background-color: white;
+}
+
+.project-image {
+  width: 100%;
+  height: 10rem;
+  background-color: #f5f5f5;
+  border-radius: 0.8rem;
+}
+
+.project-content {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .project-container {
+    flex-direction: row;
+  }
+
+  .project-image {
+    width: 10rem;
+  }
+}
+
+.project-location {
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.project-title {
+  color: var(--primary-color);
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .project-details {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+.project-details-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.project-details-item-value-amount {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.project-details-item > div:first-child {
+  color: var(--secondary-color);
+}
+
+.project-details-item > div:nth-child(2) {
+  color: var(--primary-color);
+}
+
+.project-blurb {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: var(--primary-color);
+}
+
+.project-by {
+  border-top: 1px solid #b3acf2;
+  padding-top: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.8rem;
+  background-color: #e0e0e0;
+  border-radius: 0.4rem;
+  margin: 0.4rem 0;
+  display: flex;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 0.4rem;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-bar-fill-low {
+  background-color: #cd3838db;
+}
+
+.progress-bar-fill-medium {
+  background-color: #d4802c;
+}
+
+.progress-bar-fill-high {
+  background-color: #b7b71ed0;
+}
+
+.progress-bar-fill-full {
+  background-color: #20ae48e1;
+}
+
+.progress-bar-fill-over {
+  background-color: #0e6f0ed2;
+}

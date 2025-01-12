@@ -1,0 +1,9 @@
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(
+    100vh - 7.6rem
+  ); /* subtracting the padding and header height of y-direction */
+  color: var(--error-color);
+}
